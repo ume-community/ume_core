@@ -1,7 +1,7 @@
 name: ume_core
 description: UME is an in-app debug kits platform for Flutter apps.
 version: 2.0.1
-homepage: https://github.com/ume-community/ume
+homepage: https://github.com/ume-community/ume_core
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
