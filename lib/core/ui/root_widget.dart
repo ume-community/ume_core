@@ -149,8 +149,10 @@ class _UMEWidgetState extends State<UMEWidget> {
       children: <Widget>[
         RepaintBoundary(child: child, key: rootKey),
         MediaQuery(
-          data: MediaQueryData.fromWindow(
-              bindingAmbiguate(WidgetsBinding.instance)!.window),
+          data:
+              // [Original]   MediaQueryData.fromWindow( bindingAmbiguate(WidgetsBinding.instance)!.window),
+              MediaQueryData.fromView(
+                  bindingAmbiguate(WidgetsBinding.instance)!.window),
           child: Localizations(
             locale: supportedLocales?.first ?? Locale('en', 'US'),
             delegates: delegates.toList(),
