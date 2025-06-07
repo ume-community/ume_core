@@ -15,7 +15,7 @@ dependencies:
 
   shared_preferences: ^2.3.3
 
-  vm_service: ^14.2.5
+  vm_service: ^15.0.0
 
   tuple: ^2.0.0
 
